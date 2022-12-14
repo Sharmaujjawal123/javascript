@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+
+        }
+        #form{
+            width: 150px;
+            margin: 100px auto 0 auto;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 15px;
+            overflow: hidden;
+            
+            box-shadow: -2px 2px 15px black  ;
+            background-color: beige;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <form id= "form"> 
+        <input type="text" id="text" onkeydown="alert(this.value);">
+        <input type="text" id="email"  onkeypress="document.getElementById('form').style.background=this.value">
+        <input type ="text" id="number" onkeyup="document.getElementById('form').style.background=this.value"><br>
+        <input type ="submit" id ="submit" value="submit">
+
+
+    </form>
+
+    
+</body>
+
+</html>

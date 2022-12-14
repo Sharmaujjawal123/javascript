@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #x{
+            margin: 20px;
+            border: 20px solid black;
+            width: 120px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="x">
+        <p class="ujj">ujjawa</p>
+        <h5 class="ujj">vipul</h5>
+    </div>
+</body>
+<script>
+    var x=document.getElementsByClassName('ujj');
+    console.log(x[0])
+    x[1].textcontent = "vip";
+    x[1].style.color="blue";
+    x[0].style.backgroundColor="red";
+    console.log(x)
+    for(var z=0; z<3; z++){
+        x[z].style.backgroundColor="green";
+    }
+
+     
+    
+</script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //  let x=["ujjawal","sharma","vipul","kumar"];
+    //  for (let i of x){
+    //     let y = i.slice(0,1);
+    //     let z= (y.toUpperCase())
+    //     document.write(z+i.slice(1))
+    //     document.write("</br>")
+
+
+// not under stand down
+    const list=document.querySelector('.output ul');
+    list.innerHTML = " ";
+    let citi =["ujjwal","sharma","vipul","kumar"];
+    for (let i=0; i<citi.length;i++){
+        let lowerCaseCiti=citi[i].toLowerCase();
+        let first =lowerCaseCity.slice(0,1);
+        lowerCasecity=lowerCaseCiti.replace(first,first.toUpperCase());
+        let listitem= document.createElement("li");
+        listItem.textContent=lowerCaseCity;
+        list.appendChild(listItem);
+        
+    }
+
+
+     
+</script>
+</html>

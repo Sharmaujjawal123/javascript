@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Non tempora doloribus fuga 
+        omnis iusto provident exercitationem pers
+        piciatis corrupti quidem. Voluptatum ducimus illum
+         voluptate, quae debitis deser
+         unt adipisci 
+         exercitationem excepturi veniam.
+    </p>
+    <button onclick="fun()">click me</button>
+    
+</body>
+<script>
+   let para= document.getElementById("para");
+   para.addEventListener("mouseover",function ujj(){
+     para.style.fontSize="large" 
+    
+   });
+
+ para.addEventListener("mouseout",function ujj(){
+   para.style.fontSize="small" 
+   //  alert("mouse out")
+ });
+ function fun(){
+    if (para.style.display !="none"){
+    para.style.display="none";
+ }
+ else{
+    para.style.display="block";
+ }
+}
+</script>
+</html>
